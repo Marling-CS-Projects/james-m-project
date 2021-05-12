@@ -8,19 +8,52 @@
     <script src="js/pixi.min.js"></script>
     <script>
 let app;
+let player;
+let keys = {};
+let keysDiv;
 
 window.onload = function() {
 app = new PIXI.Application(
 
 {
-    width: 800,
-    height: 600,
+    width: 2000,
+    height: 1000,
     backgroundColor: 0xAAAAAA
 }
 );
 
+document.body.appendChild(app.view);
 
+player = new PIXI.Sprite.from("images/player.png");
+player.anchor.set(0.5);
+player.x = app.view.width / 2;
+player.y = app.view.height / 2;
 
+app.stage.addChild(player);
+
+// keybord event handlers
+window.addEventListener("keydown", keysDown);
+window.addEventListener("keyup", keysUp);
+
+app.ticker.add(gameLoop);
+
+keysDiv = document.querySelector("#keys");
+}
+
+function keysDown(e) {
+    console.log(e.keyCode);
+    keys[e.keyCode] = true;
+
+}
+
+function keysUp(e) {
+    console.log(e.keyCode);
+    keys[e.keyCode] = false;
+
+}
+
+function gameLoop() {
+    keysDiv.innerHTML = JSON.stringify(keys);
 }
 
 
@@ -29,6 +62,6 @@ app = new PIXI.Application(
 
 </head>
 <body>
-    
+  <div id="keys"></div> 
 </body>
 </html>
