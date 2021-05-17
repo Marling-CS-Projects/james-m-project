@@ -16,15 +16,15 @@ window.onload = function() {
 app = new PIXI.Application(
 
 {
-    width: 2000,
-    height: 1000,
+    width: 1000,
+    height: 800,
     backgroundColor: 0xAAAAAA
 }
 );
 
 document.body.appendChild(app.view);
 
-player = new PIXI.Sprite.from("images/player.png");
+player = new PIXI.Sprite.from("images/player2.png");
 player.anchor.set(0.5);
 player.x = app.view.width / 2;
 player.y = app.view.height / 2;
@@ -41,7 +41,6 @@ keysDiv = document.querySelector("#keys");
 }
 
 function keysDown(e) {
-    console.log(e.keyCode);
     keys[e.keyCode] = true;
 
 }
@@ -54,6 +53,23 @@ function keysUp(e) {
 
 function gameLoop() {
     keysDiv.innerHTML = JSON.stringify(keys);
+// W
+if (keys["87"]) {
+    player.y -= 5;
+}
+//A
+if (keys["65"]) {
+    player.x -= 5;
+}
+//S
+if (keys["83"]) {
+    player.y += 5;
+}
+//D
+if (keys["68"]) {
+    player.x += 5;
+}
+
 }
 
 
