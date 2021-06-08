@@ -10,7 +10,7 @@
 let app;
 let player;
 
-window.onload = function() {
+window.onload = function () {
 app = new PIXI.Application(
 
 {
@@ -22,8 +22,9 @@ app = new PIXI.Application(
 
 document.body.appendChild(app.view);
 
+
 // preload assets
-app.loader.baseUr1 = "images";
+app.loader.baseUrl = "images";
 app.loader
 .add("sprite01", "bloat01.png")
 .add("sprite02", "bloat02.png")
@@ -39,18 +40,18 @@ app.loader.onError.add(reportError);
 app.loader.load();
 }
 
-function showProgress(e){
+function showProgress(e) {
     console.log(e.progress);
 }
 
-function reportError(e){
+function reportError(e) {
     console.error("ERROR: " + e.message);
 }
 
-function doneLoading(e){
+function doneLoading(e) {
     console.log("DONE LOADING!");
 
-    player = PIXI.sprite.from(app.loader.resources.player.texture);
+    player = PIXI.Sprite.from(app.loader.resources.player.texture);
     player.x = app.view.width / 2;
     player.y = app.view.height / 2;
     player.anchor.set(0.5);
