@@ -24,13 +24,14 @@ app = new PIXI.Application(
 
 document.body.appendChild(app.view);
 
-player = new PIXI.Sprite.from("images/player.png");
+// Implementing the sprites onto the canvas and setting their positions.
+player = new PIXI.Sprite.from("images/bloat03.png");
 player.anchor.set(0.5);
 player.x = 16;
 player.y = app.view.height / 2;
 app.stage.addChild(player);
 
-enemy = new PIXI.Sprite.from("images/player.png");
+enemy = new PIXI.Sprite.from("images/bloat03.png");
 enemy.anchor.set(0.5);
 enemy.x = app.view.width - 16;
 enemy.y = app.view.height / 2;
@@ -39,7 +40,7 @@ app.stage.addChild(enemy);
 app.ticker.add(gameLoop);
 }
 
-
+// Implementing movement, its speed and ensuring the sprites collide.
 function gameLoop(delta){
     player.x += speed;
     enemy.x -= speed;
@@ -67,3 +68,5 @@ function rectsIntersect(a, b) {
 <body>
 </body>
 </html>
+
+
