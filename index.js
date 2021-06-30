@@ -11,21 +11,16 @@ app = new PIXI.Application(
     {
         width: 1000,
         height: 800,
-        backgroundColor: 0xAAAAAA
+        backgroundColor: 0xCD5C5C
     }
 );
 
 document.body.appendChild(app.view);
 
-// preloaded assets
+// preloading sprite so it loads when game is opened and feedback system to report on progress, loading and errors.
 app.loader.baseUrl = "images";
 app.loader
-.add("sprite01", "bloat01.png")
-.add("sprite02", "bloat02.png")
-.add("sprite03", "bloat03.png")
-.add("sprite04", "bloat04.png")
-.add("sprite05", "bloat05.png")
-.add("player", "player.png");
+.add("player", "bloat03.png");
 
 app.loader.onProgress.add(showProgress);
 app.loader.onComplete.add(doneLoading);
@@ -51,17 +46,27 @@ function doneLoading(e) {
     app.stage.addChild(player);
 }
 
-player = new PIXI.Sprite.from("images/player.png");
-player.anchor.set(0.5);
-player.x = 16;
-player.y = app.view.height / 2;
-app.stage.addChild(player);
+// Implementing keyboard movement and setting a speed for the sprite.
+function gameLoop(delta){
+    player.x += speed;
+    enemy.x -= speed;
 
-enemy = new PIXI.Sprite.from("images/player.png");
-enemy.anchor.set(0.5);
-enemy.x = app.view.width - 16;
-enemy.y = app.view.height / 2;
-app.stage.addChild(enemy);
+    if (rectsIntersect(player, enemy)) {
+        speed = 0;
+    }
+
+}
+
+
+function rectsIntersect(a, b) {
+    let aBox = a.getBounds();
+    let bBox = b.getBounds();
+
+    return aBox.x + aBox.width > bBox.x &&
+    aBox.x < bBox.x + bBox.width &&
+    aBox.y + aBox.height > bBox.y &&
+    aBox.y < bBox.y + bBox.height;
+}
 
 // keybord event handlers
 window.addEventListener("keydown", keysDown);
