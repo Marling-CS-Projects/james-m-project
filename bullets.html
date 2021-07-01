@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/pixi.min.js"></script>
+    <script>
+        let app;
+        let player;
+        let bullets = [];
+        let bulletSpeed = 10;
+
+        window.onload = function () {
+            app = new PIXI.Application(
+
+                {
+                    width: 1000,
+                    height: 800,
+                    backgroundColor: 0xCD5C5C
+                }
+            );
+
+            document.querySelector("#gameDiv").appendChild(app.view);
+            app.stage.interative = true;
+            document.querySelector("#gameDiv").addEventListener("pointerdown", fireBullet);
+
+            player = PIXI.Sprite.from("images/bloat03.png");
+            player.x = app.view.width / 2;
+            player.y = app.view.height / 2;
+            player.anchor.set(0.5);
+
+            app.stage.addChild(player);
+
+            app.ticker.add(gameLoop);
+
+        }
+
+        function fireBullet(e) {
+            console.log("FIRE!");
+
+            let bullet = createBullet();
+            bullets.push(bullet);
+        }
+
+        function createBullet() {
+            let bullet = new PIXI.Sprite.from("images/bullet.png");
+            bullet.anchor.set(0.5);
+            bullet.x = player.x;
+            bullet.y = player.y;
+            bullet.speed = bulletSpeed;
+            app.stage.addChild(bullet);
+
+            return bullet;
+        }
+
+
+        function updateBullets(delta) {
+            for (let i = 0; i < bullets.length; i++) {
+                bullets[i].position.y -= bullets[i].speed;
+
+                if (bullets[i].position.y < 0) {
+                    bullets[i].dead = true;
+                }
+             }
+
+             for (let i = 0; i < bullets.length; i++) {
+                if (bullets[i].dead) {
+                    app.stage.removeChild(bullets[i]);
+                    bullets.splice(i,1);
+                }
+             }
+
+
+        }
+
+        function gameLoop(delta) {
+            updateBullets(delta);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="gameDiv"></div>
+</body>
+
+</html>

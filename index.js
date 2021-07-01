@@ -17,11 +17,12 @@ app = new PIXI.Application(
 
 document.body.appendChild(app.view);
 
-// preloading sprite so it loads when game is opened and feedback system to report on progress, loading and errors.
+// preloading sprite so it loads when game is opened
 app.loader.baseUrl = "images";
 app.loader
 .add("player", "bloat03.png");
 
+// feedback system to report on progress, loading and errors.
 app.loader.onProgress.add(showProgress);
 app.loader.onComplete.add(doneLoading);
 app.loader.onError.add(reportError);
@@ -39,6 +40,7 @@ function reportError(e) {
 function doneLoading(e) {
     console.log("DONE LOADING!");
 
+    // anchoring sprite on the canvas in a set position
     player = PIXI.Sprite.from(app.loader.resources.player.texture);
     player.x = app.view.width / 2;
     player.y = app.view.height / 2;
