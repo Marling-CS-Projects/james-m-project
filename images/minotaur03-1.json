@@ -1,0 +1,48 @@
+{"frames": {
+
+"Minotaur_03_Walking_003.png":
+{
+	"frame": {"x":435,"y":1,"w":422,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":227,"y":38,"w":422,"h":418},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_03_Walking_014.png":
+{
+	"frame": {"x":431,"y":421,"w":424,"h":414},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":217,"y":38,"w":424,"h":414},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_03_Walking_015.png":
+{
+	"frame": {"x":1,"y":420,"w":428,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":219,"y":38,"w":428,"h":418},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_03_Walking_016.png":
+{
+	"frame": {"x":1,"y":1,"w":432,"h":417},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":221,"y":41,"w":432,"h":417},
+	"sourceSize": {"w":720,"h":490}
+}},
+"animations": {
+	"Minotaur_03_Walking": ["Minotaur_03_Walking_003.png","Minotaur_03_Walking_014.png","Minotaur_03_Walking_015.png","Minotaur_03_Walking_016.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "minotaur03-1.png",
+	"format": "RGBA8888",
+	"size": {"w":858,"h":839},
+	"scale": "1",
+	"related_multi_packs": [ "minotaur03-0.json", "minotaur03-2.json", "minotaur03-3.json", "minotaur03-4.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:9a23ee5f751823b88e65a2aa2afde4d7:dbd8c71a2698ae06adebfa3dbea9b82f:0f740ba109e734613b6b9ec6212408b0$"
+}
+}

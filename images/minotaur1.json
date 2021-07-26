@@ -1,0 +1,159 @@
+{"frames": {
+
+"Minotaur_02_Walking_000.png":
+{
+	"frame": {"x":1,"y":1,"w":467,"h":433},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":187,"y":28,"w":467,"h":433},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_001.png":
+{
+	"frame": {"x":1,"y":436,"w":448,"h":436},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":202,"y":24,"w":448,"h":436},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_002.png":
+{
+	"frame": {"x":1,"y":874,"w":429,"h":434},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":218,"y":24,"w":429,"h":434},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_003.png":
+{
+	"frame": {"x":432,"y":874,"w":414,"h":429},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":229,"y":27,"w":414,"h":429},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_004.png":
+{
+	"frame": {"x":1291,"y":1279,"w":421,"h":422},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":218,"y":31,"w":421,"h":422},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_005.png":
+{
+	"frame": {"x":1204,"y":854,"w":423,"h":419},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":211,"y":35,"w":423,"h":419},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_006.png":
+{
+	"frame": {"x":1625,"y":845,"w":417,"h":417},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":212,"y":39,"w":417,"h":417},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_007.png":
+{
+	"frame": {"x":433,"y":1305,"w":399,"h":424},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":222,"y":34,"w":399,"h":424},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_008.png":
+{
+	"frame": {"x":859,"y":1305,"w":378,"h":430},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":233,"y":30,"w":378,"h":430},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_009.png":
+{
+	"frame": {"x":848,"y":869,"w":354,"h":434},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":245,"y":27,"w":354,"h":434},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_010.png":
+{
+	"frame": {"x":451,"y":436,"w":363,"h":436},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":246,"y":24,"w":363,"h":436},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_011.png":
+{
+	"frame": {"x":816,"y":432,"w":378,"h":435},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":241,"y":24,"w":378,"h":435},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_012.png":
+{
+	"frame": {"x":1,"y":1310,"w":398,"h":430},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":230,"y":27,"w":398,"h":430},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_013.png":
+{
+	"frame": {"x":1615,"y":420,"w":414,"h":423},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":219,"y":31,"w":414,"h":423},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_014.png":
+{
+	"frame": {"x":1196,"y":426,"w":426,"h":417},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":211,"y":35,"w":426,"h":417},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_015.png":
+{
+	"frame": {"x":1344,"y":1,"w":431,"h":417},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":212,"y":39,"w":431,"h":417},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_016.png":
+{
+	"frame": {"x":916,"y":1,"w":426,"h":423},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":221,"y":35,"w":426,"h":423},
+	"sourceSize": {"w":720,"h":490}
+},
+"Minotaur_02_Walking_017.png":
+{
+	"frame": {"x":470,"y":1,"w":444,"h":429},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":205,"y":31,"w":444,"h":429},
+	"sourceSize": {"w":720,"h":490}
+}},
+"animations": {
+	"Minotaur_02_Walking": ["Minotaur_02_Walking_000.png","Minotaur_02_Walking_001.png","Minotaur_02_Walking_002.png","Minotaur_02_Walking_003.png","Minotaur_02_Walking_004.png","Minotaur_02_Walking_005.png","Minotaur_02_Walking_006.png","Minotaur_02_Walking_007.png","Minotaur_02_Walking_008.png","Minotaur_02_Walking_009.png","Minotaur_02_Walking_010.png","Minotaur_02_Walking_011.png","Minotaur_02_Walking_012.png","Minotaur_02_Walking_013.png","Minotaur_02_Walking_014.png","Minotaur_02_Walking_015.png","Minotaur_02_Walking_016.png","Minotaur_02_Walking_017.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "minotaur1-0.png",
+	"format": "RGBA8888",
+	"size": {"w":2043,"h":1709},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9cd5e6ce30f0738fa6d259f14e2b6d87:9335eec10c93f7f4bd85efa0d314304d:f0787bd99f1305a6642a3d8d7e02a16f$"
+}
+}

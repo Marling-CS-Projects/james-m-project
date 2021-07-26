@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>spriteSheet</title>
-    <style>
-      ul {
-        padding-left: 2px;
-      }
-      ul > li {
-        display: inline-block;
-      }
-    </style>
-    <script src="../js/pixi.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/pixi.min.js"></script>
     <script>
       let app;
       let player;
@@ -24,14 +17,14 @@
 
       window.onload = function () {
         app = new PIXI.Application({
-          width: 800,
-          height: 600,
-          backgroundColor: 0xaaaaaa,
+          width: 1000,
+          height: 800,
+          backgroundColor: 0xCD5C5C
         });
 
         document.body.appendChild(app.view);
 
-        app.loader.add("minotaur", "minotaur.png");
+        app.loader.add("viking", "images/viking.png");
         app.loader.load(doneLoading);
 
         keysDiv = document.querySelector("#keys");
@@ -52,7 +45,7 @@
 
       function createPlayerSheet() {
         let ssheet = new PIXI.BaseTexture.from(
-          app.loader.resources["minotaur"].url
+          app.loader.resources["viking"].url
         );
         let w = 26;
         let h = 36;

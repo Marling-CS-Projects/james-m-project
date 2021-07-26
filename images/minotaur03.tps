@@ -32,7 +32,7 @@
         <key>dpi</key>
         <uint>72</uint>
         <key>dataFormat</key>
-        <string>spritesheet-only</string>
+        <string>pixijs4</string>
         <key>textureFileName</key>
         <filename></filename>
         <key>flipPVR</key>
@@ -74,7 +74,7 @@
         <key>jpgQuality</key>
         <uint>80</uint>
         <key>pngOptimizationLevel</key>
-        <uint>0</uint>
+        <uint>1</uint>
         <key>webpQualityLevel</key>
         <uint>101</uint>
         <key>textureSubPath</key>
@@ -88,9 +88,9 @@
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>2048</int>
+            <int>128</int>
             <key>height</key>
-            <int>2048</int>
+            <int>128</int>
         </QSize>
         <key>fixedTextureSize</key>
         <QSize>
@@ -102,7 +102,7 @@
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
             <key>algorithm</key>
-            <enum type="AlgorithmSettings::AlgorithmId">Basic</enum>
+            <enum type="AlgorithmSettings::AlgorithmId">MaxRects</enum>
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
             <key>sizeConstraints</key>
@@ -128,9 +128,15 @@
             </struct>
         </struct>
         <key>dataFileNames</key>
-        <map type="GFileNameMap"/>
+        <map type="GFileNameMap">
+            <key>data</key>
+            <struct type="DataFile">
+                <key>name</key>
+                <filename></filename>
+            </struct>
+        </map>
         <key>multiPack</key>
-        <true/>
+        <false/>
         <key>forceIdenticalLayout</key>
         <false/>
         <key>outputFormat</key>
@@ -143,7 +149,7 @@
             <string></string>
         </struct>
         <key>autoAliasEnabled</key>
-        <false/>
+        <true/>
         <key>trimSpriteNames</key>
         <false/>
         <key>prependSmartFolderName</key>
@@ -157,45 +163,45 @@
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
-            <uint>0</uint>
+            <uint>1</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
-            <enum type="SpriteSettings::TrimMode">None</enum>
+            <enum type="SpriteSettings::TrimMode">Trim</enum>
             <key>tracerTolerance</key>
             <int>200</int>
             <key>heuristicMask</key>
             <false/>
             <key>defaultPivotPoint</key>
-            <point_f>0.5,0.5</point_f>
+            <point_f>0,0</point_f>
             <key>writePivotPoints</key>
             <false/>
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_000.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_001.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_002.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_003.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_004.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_005.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_006.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_007.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_008.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_009.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_010.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_011.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_012.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_013.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_014.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_015.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_016.png</key>
-            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking/Minotaur_02_Walking_017.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_000.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_001.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_002.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_003.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_004.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_005.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_006.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_007.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_008.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_009.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_010.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_011.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_012.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_013.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_014.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_015.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_016.png</key>
+            <key type="filename">../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking/Minotaur_03_Walking_017.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
+                <point_f>0,0</point_f>
                 <key>spriteScale</key>
                 <double>1</double>
                 <key>scale9Enabled</key>
@@ -210,7 +216,7 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_02/PNG Sequences/Walking</filename>
+            <filename>../../../Downloads/craftpix-net-484869-free-minotaur-tiny-style-2d-sprites/PNG/Minotaur_03/PNG Sequences/Walking</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
