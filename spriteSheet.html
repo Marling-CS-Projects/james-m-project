@@ -33,8 +33,7 @@
         window.addEventListener("keydown", keysDown);
         window.addEventListener("keyup", keysUp);
 
-        /*app.stage.interactive = true;
-        app.stage.on("pointermove", movePlayer);*/
+        
       };
 
       function doneLoading(e) {
@@ -42,7 +41,7 @@
         createPlayer();
         app.ticker.add(gameLoop);
       }
-
+// preloading the image used for the sprite.
       function createPlayerSheet() {
         let ssheet = new PIXI.BaseTexture.from(
           app.loader.resources["viking"].url
@@ -50,6 +49,7 @@
         let w = 26;
         let h = 36;
 
+// creating frames for the sprite
         playerSheet["standSouth"] = [
           new PIXI.Texture(ssheet, new PIXI.Rectangle(1 * w, 0, w, h)),
         ];
@@ -86,6 +86,7 @@
         ];
       }
 
+      // creating a player for my sprite.
       function createPlayer() {
         player = new PIXI.AnimatedSprite(playerSheet.walkSouth);
         player.anchor.set(0.5);
@@ -141,12 +142,7 @@
           player.x += speed;
         }
       }
-      //mouse interactions:
-      /*function movePlayer(event) {
-        let pos = event.data.global; // get mouse position
-        player.x = pos.x;
-        player.y = pos.y;
-      }*/
+
     </script>
   </head>
   <body>
